@@ -1,0 +1,47 @@
+---
+title: "R programming 2017 \n Prepping for Tutorial 4 - Rmarkdown"
+author: "Rossi Abi-Rafeh"
+date: "11/12/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. In tutorial # 4, you will create your own R Markdown documents and run R analyses in them. Before you go to class, please follow the instructions in this document.
+
+R Markdown is a simple formatting syntax for writing HTML, PDF, and MS Word documents. For more details, see <http://rmarkdown.rstudio.com>.
+
+In Rstudio, you do not run an .Rmd file the same way of an .R file. When you click the **Knit** button in Rstudio, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+
+R code chunks are small pieces of code that are embedded (google for definition) inline within the text of the document. You can embed an R code chunk like this:
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+The R Markdown engine will show the results of the R code chunk in the document it produces (HTML/PDF/etc...)
+
+## Instructions
+
+1. In order to use the R Markdown package, you have to install it with: `install.packages("rmarkdown")`
+2. If not done yet, install the package knitr : `install.packages("knitr")`
+3. If you do not have latex installed on your computer, please do so : Install MikTex for Windows and TeX Live for Apple. (Use google) 
+4. On your computer, install git. How? Like this :  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git  - In French : https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git
+5. Go to https://github.com and create a new account using your ut1 e-mail address. Then go to https://education.github.com/pack and get your Student Discount (free private folders basically) For details, see here https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration - In French https://git-scm.com/book/fr/v2/GitHub-Configuration-et-paramétrage-d’un-compte
+6. Generate an SSH key on your computer, and link it to your Github account. How? https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key, In french : https://git-scm.com/book/fr/v2/Git-sur-le-serveur-Génération-des-clés-publiques-SSH#_generate_ssh_key
+
+
+
+
+
+## Checks
+
+1. To check if you did steps 1 and 2 correctly, open the accompanying file "tutorial4-rmd-prep-check.Rmd" in R Studio, and click on the Knit button. You should have an HTML page open after some moments. If not, read the error and solve it.
+2. To check if you did step 3 correctly, open the accompanying file "tutorial4-rmd-prep-check-pdf.Rmd" in R Studio, and click on the Knit button. You should have a PDF file open after a few moments. If not, read the error and solve it. Make sure RStudio can find your latex binaries (google for info)
+3. To check if you did Step 4 correctly, create a test folder in your rprog folder. Call it "TEST_GIT" Then open Terminal (on Mac), or Powershell (or CMD on Windows). Inside the command line navigate to your rprog/TEST_GIT folder (using "cd rprog/TEST_GIT/" or another path), and run the command "git init". It should give you a message similar to this : "Initialized empty Git repository in .../rprog/TEST_GIT/.git"
+4. To check if your step 5 is OK, find the public address of your Github account and please fill it under the right column in the Google Sheet. For example my public Github address is https://github.com/rossihabibi; find yours. The Google sheet is here :  https://docs.google.com/spreadsheets/d/1mM-9CveHeWKjN0nWaxgfSDXnqAuDw2qrdw6hempVJmw/edit?usp=sharing (Sheet : Course info)
+
