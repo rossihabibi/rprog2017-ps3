@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, tidy.opts=list(width.cutoff= 30))
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, tidy.opts=list(width.cutoff= 80))
 ```
 ## R Markdown Basics
 
@@ -40,7 +40,9 @@ summary(cars)
 
 Inside an R code chunk, you can put whatever R code you want, including comments. Like this : 
 ```{r}
-summary(cars) #cars is a dataset pre-loaded in R with information on speed and stopping distances of cars
+summary(cars) 
+# cars is a dataset pre-loaded in R with information on speed and 
+# stopping distances of cars
 ```
 
 The space inside the brackets is where you can assign rules for that code chunk. The code chunk above says that the code is R code.
@@ -57,7 +59,8 @@ You can create a dataframe:
 ```{r, tidy = TRUE}
 library(tidyverse)
 company <- c("Alphabet Inc", "Apple", "Facebook", "Amazon", "Ali Baba", "Snap Inc", "Criteo", "General Motors")
-market_val <- c(714, 896, 518, 542, 477, 15, 2, 60) # Market capitalization of company on the 13 Nov 2017 - from Yahoo! Finance
+market_val <- c(714, 896, 518, 542, 477, 15, 2, 60) 
+# Market capitalization of company on the 13 Nov 2017 - from Yahoo! Finance
 gafa_info <- data.frame(company, market_val)
 head(gafa_info)
 ```
@@ -77,7 +80,7 @@ library(knitr)
 
 If you don't want a code chunk to be evaluated at all, then you use : eval = FALSE.
 ```{r, eval=FALSE}
-library(NOPACKAGE) # there is no package called NOPACKAGE, but it does not give an error message when compiling because the code chunk is not evaluated at all
+library(NOPACKAGE) # there is no package called NOPACKAGE, but it does not give # an error message when compiling because the code chunk is not evaluated at all
 ```
 
 ### More code instructions
@@ -153,4 +156,19 @@ setwd("~/...")
 
 You can find your working directory using:
 getwd()
+
+## Create your first R Markdown File
+
+1. Create a new R Markdown file (.Rmd) in RStudio.
+2. Insert a YAML Header with title, author and date of your choice at the top of your .Rmd script.
+3. Display the summary of “iris” dataset in your report. (Remember iris is a dataset pre-loaded in R that has the petal and sepal length and width for 3 types of iris.)
+3bis. Add a header called "Summary of Iris dataset" to the previous step.
+4. Load the package tidyverse without showing the code or the warnings in the report
+5. Plot the scatterplot of petal length and sepal length, differentiated by Specie.
+6. Set fig.width and fig.height of your plot to 5.
+7. Create a small test dataframe with variables of your choice and dipslay it in your report.
+8. Hide the code of the previous question from your report.
+
+
+
 
