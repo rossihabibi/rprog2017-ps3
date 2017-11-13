@@ -1,2 +1,2 @@
 # rprog2017-tutorial4
-Tutorial 4 - Git and R Markdown
+Problem set 3 - Git and R Markdown
