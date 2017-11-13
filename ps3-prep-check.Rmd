@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial 4 Rmarkdown check #1'
+title: 'PS3 Rmarkdown check #1'
 output: html_document
 ---
 
